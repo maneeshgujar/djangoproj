@@ -1,0 +1,35 @@
+{% extends "master.html"%}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member details</title>
+</head>
+<body>
+    <p>first name   : {{x.firstname}}</p>
+    <p>last name    :{{x.lastname}}</p>
+    <p>phone number : {{x.phno}}</p>
+    <p>Dob          : {{x.dob}}</p>
+    <p><a href="/members">Go back</a></p>
+</body>
+</html> -->
+{% block title%}
+
+member-details
+
+{% endblock %}
+
+
+
+{%block content%}
+<div class="mycard">
+
+<p>first name   : {{x.firstname}}</p>
+    <p>last name    :{{x.lastname}}</p>
+    <p>phone number : {{x.phno}}</p>
+    <p>Dob          : {{x.dob}}</p>
+    <p><a href="/members">Go back</a></p>
+</div>
+
+{% endblock%}

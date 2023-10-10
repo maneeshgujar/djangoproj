@@ -1,0 +1,11 @@
+{% extends 'master.html'%}
+{% block title%} home-page {% endblock%}
+
+{% block content %}
+<div class="main">
+{%with noun="Home" %}
+    <h2>Welcome to {{noun}} page</h2>
+    <p>To see all our members <a href="/members">click here</a></p>
+    {% endwith %}
+</div>
+{%endblock%}
