@@ -28,7 +28,7 @@ DEBUG =False
 
 # ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['.verel.app']
+ALLOWED_HOSTS = ['.verel.app','now.sh','127.0.0.1','localhost']
 
 
 
