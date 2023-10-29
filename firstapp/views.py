@@ -16,9 +16,9 @@ def func(request):
 
 def memfunc(request):
     #mongo database
-    mem= person.find({}) 
+    # mem= person.find({}) 
     # print(mem)
-    # mem = Member.objects.all().values()
+    mem = Member.objects.all().values()
     # mem = person.objects.all().values()
     # mem = Member.objects.all().order_by('phno')
     # mem = Member.objects.filter(lastname__startswith="g").values()
@@ -32,9 +32,9 @@ def memfunc(request):
     # return HttpResponse("hello")
 
 def detailsfunc(request,id):
-    mem= person.find_one({'phno':id})
+    # mem= person.find_one({'phno':id})
 
-    # mem = Member.objects.get(id=id)
+    mem = Member.objects.get(id=id)
     template= loader.get_template('details.html')
     context={
         'x':mem,
@@ -42,7 +42,5 @@ def detailsfunc(request,id):
     return HttpResponse(template.render(context,request))
 
 def mainfunc(request):
-
-    
     template= loader.get_template('main.html')
     return HttpResponse(template.render())
